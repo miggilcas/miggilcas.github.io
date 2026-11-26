@@ -5,7 +5,6 @@ permalink: /projects/
 description: Selected research projects and field deployments.
 nav: true
 nav_order: 1
-display_categories: []
 horizontal: false
 ---
 
