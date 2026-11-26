@@ -9,6 +9,15 @@ en:
   switch_label: ES
   switch_title: Ver en español
   date_format: "%b %d, %Y"
+  section_about: About
+  section_work: Selected work
+  section_timeline: Timeline
+  section_contact: Contact
+  projects_url: /projects/
+  all_projects: All projects
+  all_publications: All publications
+  full_timeline: Full timeline
+  read_more: Read more
 es:
   home: /es/
   about: sobre mí
@@ -19,3 +28,12 @@ es:
   switch_label: EN
   switch_title: View in English
   date_format: "%d/%m/%Y"
+  section_about: Sobre mí
+  section_work: Trabajo destacado
+  section_timeline: Trayectoria
+  section_contact: Contacto
+  projects_url: /es/projects/
+  all_projects: Todos los proyectos
+  all_publications: Todas las publicaciones
+  full_timeline: Todas las noticias
+  read_more: Leer más

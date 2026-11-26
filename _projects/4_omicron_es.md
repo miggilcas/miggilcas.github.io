@@ -8,6 +8,7 @@ related_publications: false
 lang: es
 lang_ref: omicron
 permalink: /es/projects/omicron/
+featured: true
 ---
 
 **Proyecto:** [OMICRON](https://cordis.europa.eu/project/id/955269) (EU H2020, GA 955269)

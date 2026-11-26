@@ -1,0 +1,44 @@
+{%- comment -%}
+  Animated career journey (home page hero). Data: _data/journey.yml. Script: assets/js/journey.js.
+{%- endcomment -%}
+{%- assign cur_lang = page.lang | default: 'en' -%}
+{%- assign j = site.data.journey -%}
+{%- assign ui = j[cur_lang] -%}
+{%- assign first = j.stages | first -%}
+<section id="journey" class="jr" data-lang="{{ cur_lang }}" aria-label="{{ ui.eyebrow }}">
+  <header class="jr-heading">
+    <div class="jr-eyebrow">{{ ui.eyebrow }}</div>
+    <h1>
+      {{ ui.title_a }}<br><span>{{ ui.title_b }}</span>
+    </h1>
+    <p>{{ ui.subtitle }}</p>
+  </header>
+  <div class="jr-main">
+    <div class="jr-model">
+      <canvas role="img" aria-label="{{ ui.eyebrow }}"></canvas>
+    </div>
+    <div class="jr-caption" aria-live="polite">
+      <div class="jr-index">{{ first.index[cur_lang] }}</div>
+      <h2>{{ first.title[cur_lang] }}</h2>
+      <p class="jr-context">{{ first.context[cur_lang] }}</p>
+      <span class="jr-rule"></span>
+    </div>
+  </div>
+  <nav class="jr-timeline" aria-label="Career stages">
+    {%- for s in j.stages %}
+      <button type="button" data-stage="{{ forloop.index0 }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">
+        <span class="jr-step">{{ s.step }}</span>
+        <span class="jr-name">{{ s.name[cur_lang] }}</span>
+        <span class="jr-track"><i></i></span>
+      </button>
+    {%- endfor %}
+  </nav>
+  <footer class="jr-footer">
+    <span>{{ ui.footer }}</span>
+    <button class="jr-play" type="button">{{ ui.pause }}</button>
+  </footer>
+  <script type="application/json">
+    {"ui": {"pause": {{ ui.pause | jsonify }}, "play": {{ ui.play | jsonify }}}, "stages": {{ j.stages | jsonify }}}
+  </script>
+</section>
+<script defer src="{{ '/assets/js/journey.js' | relative_url | bust_file_cache }}"></script>

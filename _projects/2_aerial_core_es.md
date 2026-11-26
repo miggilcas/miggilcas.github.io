@@ -8,6 +8,7 @@ related_publications: false
 lang: es
 lang_ref: aerial_core
 permalink: /es/projects/aerial_core/
+featured: true
 ---
 
 **Proyecto:** [AERIAL-CORE](https://aerial-core.eu) (EU H2020) · **Cuándo:** 2022–2023

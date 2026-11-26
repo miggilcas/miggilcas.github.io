@@ -1,0 +1,68 @@
+# Animated career journey on the home page (EN/ES).
+# shape: circuit | document | neural | swarm | tree | drone_llm (drawn in assets/js/journey.js)
+en:
+  eyebrow: "MIGUEL GIL-CASTILLA / AERIAL ROBOTICS RESEARCHER"
+  title_a: "From Circuits"
+  title_b: "to Autonomous Flight."
+  subtitle: "Decision-making for aerial robots, from the lab to the field"
+  footer: "ELECTRONICS / AI / CERTIFICATION / FIELD ROBOTICS / AUTONOMY"
+  pause: "Pause"
+  play: "Play"
+es:
+  eyebrow: "MIGUEL GIL-CASTILLA / INVESTIGADOR EN ROBÓTICA AÉREA"
+  title_a: "De los circuitos"
+  title_b: "al vuelo autónomo."
+  subtitle: "Toma de decisiones para robots aéreos, del laboratorio al campo"
+  footer: "ELECTRÓNICA / IA / CERTIFICACIÓN / ROBÓTICA DE CAMPO / AUTONOMÍA"
+  pause: "Pausa"
+  play: "Reproducir"
+
+stages:
+  - shape: circuit
+    step: "01"
+    index: { en: "01 / BSc", es: "01 / GRADO" }
+    name: { en: "Univ. of Seville<br>BSc Robotics Eng.", es: "Univ. de Sevilla<br>Grado en Robótica" }
+    title: { en: "Electronics, Robotics<br>&amp; Mechatronics", es: "Electrónica, Robótica<br>y Mecatrónica" }
+    context:
+      en: "BSc in Electronic, Robotics and Mechatronics Engineering<br>University of Seville · 2018–2022"
+      es: "Grado en Ingeniería Electrónica, Robótica y Mecatrónica<br>Universidad de Sevilla · 2018–2022"
+  - shape: document
+    step: "02"
+    index: { en: "02 / ALTER", es: "02 / ALTER" }
+    name: { en: "ALTER Technology<br>Internship", es: "ALTER Technology<br>Prácticas" }
+    title: { en: "UAS Certification<br>&amp; Safety", es: "Certificación<br>y seguridad de UAS" }
+    context:
+      en: "Internship at ALTER Technology · 2022<br>V&amp;V roadmap for UAS in the EASA Specific category (SAIL III–IV)"
+      es: "Prácticas en ALTER Technology · 2022<br>Hoja de ruta de V&amp;V de UAS en la categoría específica de EASA (SAIL III–IV)"
+  - shape: neural
+    step: "03"
+    index: { en: "03 / MSc", es: "03 / MÁSTER" }
+    name: { en: "Univ. of Seville<br>MSc in AI", es: "Univ. de Sevilla<br>Máster en IA" }
+    title: { en: "Logic, Computation<br>&amp; AI", es: "Lógica, Computación<br>e IA" }
+    context:
+      en: "MSc in Logic, Computation and Artificial Intelligence<br>University of Seville · 2022–2023"
+      es: "Máster en Lógica, Computación e Inteligencia Artificial<br>Universidad de Sevilla · 2022–2023"
+  - shape: swarm
+    step: "04"
+    index: { en: "04 / AICIA", es: "04 / AICIA" }
+    name: { en: "AICIA<br>Research Assistant", es: "AICIA<br>Asistente de investigación" }
+    title: { en: "Multi-UAV<br>Field Integration", es: "Integración multi-UAV<br>en campo" }
+    context:
+      en: "Research Assistant, AICIA · 2022–2023<br>Heterogeneous fleets for power-line inspection (EU AERIAL-CORE)"
+      es: "Asistente de investigación, AICIA · 2022–2023<br>Flotas heterogéneas para inspección de líneas eléctricas (EU AERIAL-CORE)"
+  - shape: tree
+    step: "05"
+    index: { en: "05 / PhD", es: "05 / DOCTORADO" }
+    name: { en: "GRVC, Univ. of Seville<br>PhD (Present)", es: "GRVC, Univ. de Sevilla<br>Doctorado (actual)" }
+    title: { en: "Behavior Trees for<br>Aerial Autonomy", es: "Behavior Trees para<br>autonomía aérea" }
+    context:
+      en: "PhD candidate, GRVC Robotics Lab · 2023–present<br>FPI fellowship · Field missions on bridges, pipelines and power lines"
+      es: "Doctorando, GRVC Robotics Lab · 2023–actualidad<br>Contrato FPI · Misiones en campo en puentes, tuberías y líneas eléctricas"
+  - shape: drone_llm
+    step: "06"
+    index: { en: "06 / UC BERKELEY", es: "06 / UC BERKELEY" }
+    name: { en: "UC Berkeley<br>Visiting Researcher", es: "UC Berkeley<br>Investigador visitante" }
+    title: { en: "Language-Driven<br>Autonomy", es: "Autonomía guiada<br>por lenguaje" }
+    context:
+      en: "Visiting Researcher, ARPL · UC Berkeley · 2026<br>LLMs and VLMs that generate and ground UAV missions"
+      es: "Investigador visitante, ARPL · UC Berkeley · 2026<br>LLMs y VLMs que generan y fundamentan misiones de UAVs"

@@ -7,6 +7,7 @@ category: research
 related_publications: false
 lang_ref: arpl_berkeley
 permalink: /projects/arpl_berkeley/
+featured: true
 ---
 
 **Where:** [Agile Robotics and Perception Lab (ARPL)](https://arplaboratory.github.io/), UC Berkeley · **Host:** Prof. Giuseppe Loianno · **When:** Feb–Jul 2026

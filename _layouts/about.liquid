@@ -1,87 +1,106 @@
 ---
 layout: default
 ---
-{%- comment -%} Local override of al_folio_core 1.0.15 about.liquid: localized section headings (EN/ES). {%- endcomment -%}
+{%- comment -%}
+  Local override of al_folio_core 1.0.15 about.liquid.
+  Home page: animated journey + numbered sections (01 About, 02 Selected work, 03 Timeline, 04 Contact), EN/ES.
+{%- endcomment -%}
 {%- assign cur_lang = page.lang | default: 'en' -%}
 {%- assign t = site.data.i18n[cur_lang] -%}
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+<div class="post mg-home">
+  {% if page.journey %}
+    {% include journey.liquid %}
+  {% endif %}
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
+  <!-- 01 / About -->
+  <section class="mg-section" id="about">
+    <div class="mg-section-head"><span>01 / {{ t.section_about }}</span></div>
+    <div class="mg-about">
+      {% if page.profile and page.profile.image %}
+        <figure class="mg-portrait">
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            include figure.liquid loading="eager" path=profile_image_path class="img-fluid" sizes="(min-width: 768px) 300px, 80vw" alt="Miguel Gil-Castilla"
             cache_bust=true
           %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+        </figure>
+      {% endif %}
+      <div class="mg-about-text">
+        <h2 class="mg-name">{{ site.first_name }} {{ site.last_name }}</h2>
+        <div class="mg-subtitle">{{ page.subtitle }}</div>
+        <div class="mg-prose">{{ content }}</div>
       </div>
-    {% endif %}
+    </div>
+  </section>
 
-    <div class="clearfix">{{ content }}</div>
+  <!-- 02 / Selected work -->
+  {%- if cur_lang == 'es' -%}
+    {%- assign lang_projects = site.projects | where: 'lang', 'es' -%}
+  {%- else -%}
+    {%- assign lang_projects = site.projects | where_exp: 'p', "p.lang != 'es'" -%}
+  {%- endif -%}
+  {%- assign featured = lang_projects | where: 'featured', true | sort: 'importance' -%}
+  <section class="mg-section" id="work">
+    <div class="mg-section-head">
+      <span>02 / {{ t.section_work }}</span>
+      <a href="{{ t.projects_url | relative_url }}">{{ t.all_projects }} &rarr;</a>
+    </div>
+    <div class="mg-projects">
+      {% for project in featured %}
+        <article class="mg-project">
+          <div class="mg-project-num">{{ forloop.index | prepend: '0' }}</div>
+          <div class="mg-project-body">
+            <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+            <span class="mg-rule"></span>
+            <p>{{ project.description }}</p>
+            <a class="mg-more" href="{{ project.url | relative_url }}">{{ t.read_more }} &rarr;</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ t.news_url | relative_url }}" style="color: inherit">{{ t.news }}</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ t.publications_url | relative_url }}" style="color: inherit">{{ t.selected_publications }}</a>
-      </h2>
+      <div class="mg-subhead">
+        <span>{{ t.selected_publications }}</span>
+        <a href="{{ t.publications_url | relative_url }}">{{ t.all_publications }} &rarr;</a>
+      </div>
       {% include selected_papers.liquid %}
     {% endif %}
+  </section>
 
-    <!-- Social -->
-    {% if page.social %}
+  <!-- 03 / Timeline -->
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="mg-section" id="timeline">
+      <div class="mg-section-head">
+        <span>03 / {{ t.section_timeline }}</span>
+        <a href="{{ t.news_url | relative_url }}">{{ t.full_timeline }} &rarr;</a>
+      </div>
+      {% assign news = site.news | reverse %}
+      <ol class="mg-news">
+        {% for item in news limit: page.announcements.limit %}
+          <li>
+            <span class="mg-news-date">{{ item.date | date: t.date_format }}</span>
+            <span class="mg-news-text">
+              {%- if cur_lang == 'es' and item.es -%}
+                {{ item.es | markdownify | remove: '<p>' | remove: '</p>' }}
+              {%- else -%}
+                {{ item.content | remove: '<p>' | remove: '</p>' }}
+              {%- endif -%}
+            </span>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+  {% endif %}
+
+  <!-- 04 / Contact -->
+  {% if page.social %}
+    <section class="mg-section" id="contact">
+      <div class="mg-section-head"><span>04 / {{ t.section_contact }}</span></div>
       <div class="social">
         <div class="contact-icons">{% social_links %}</div>
-
         <div class="contact-note">{{ page.contact_note | default: site.contact_note }}</div>
       </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% if site.plugins contains 'al_newsletter' %}
-        {% include plugins/al_newsletter_form_center_margin.liquid %}
-      {% else %}
-        {% include newsletter.liquid center=true %}
-      {% endif %}
-    {% endif %}
-  </article>
+    </section>
+  {% endif %}
 </div>

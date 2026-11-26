@@ -8,6 +8,7 @@ related_publications: false
 lang: es
 lang_ref: simar
 permalink: /es/projects/simar/
+featured: true
 ---
 
 **Proyecto:** [SIMAR](https://cordis.europa.eu/project/id/101070604) (EU Horizon Europe, GA 101070604)

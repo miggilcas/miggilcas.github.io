@@ -30,6 +30,7 @@ lang: es
 contact_note: >
   La mejor forma de contactarme es por email.
 
+journey: true
 ---
 
 Desarrollo autonomía para robots aéreos que tiene que funcionar fuera del laboratorio. Mi doctorado en el GRVC Robotics Lab (Universidad de Sevilla), dirigido por los profesores Guillermo Heredia y Aníbal Ollero, propone **arquitecturas basadas en Behavior Trees** que llevan a los UAVs desde comportamientos atómicos hasta misiones completas y reactivas. Incluyen gestión de emergencias, y el mismo árbol funciona sin cambios en plataformas DJI, PX4 y ArduPilot. He desplegado estos sistemas en campañas de campo para la inspección de líneas eléctricas, puentes y tuberías, dentro de proyectos europeos como AERIAL-CORE, OMICRON y SIMAR.

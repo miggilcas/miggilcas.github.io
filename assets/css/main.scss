@@ -108,3 +108,317 @@ ul.affil i {
   color: var(--global-hover-text-color) !important;
   text-decoration: none;
 }
+
+/*******************************************************************************
+ * Home page: animated journey + numbered sections
+ ******************************************************************************/
+.mg-home {
+  --mg-sub: color-mix(in srgb, var(--global-text-color) 62%, transparent);
+  --mg-rule: var(--global-divider-color);
+  --mg-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Journey hero */
+.jr {
+  padding: 8px 0 12px;
+}
+.jr-eyebrow {
+  font: 500 12px var(--mg-mono);
+  letter-spacing: 1.3px;
+  color: var(--mg-sub);
+  margin-bottom: 18px;
+}
+.jr-heading h1 {
+  font-size: clamp(40px, 7.5vw, 68px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  margin: 0;
+}
+.jr-heading h1 span {
+  color: var(--global-theme-color);
+}
+.jr-heading p {
+  font-size: 17px;
+  color: var(--mg-sub);
+  margin: 14px 0 0;
+}
+.jr-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(180px, 1fr);
+  gap: 26px;
+  align-items: center;
+  min-height: 270px;
+}
+.jr-model {
+  height: 290px;
+  min-width: 0;
+}
+.jr-model canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.jr-caption {
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease;
+}
+.jr-caption.jr-fade {
+  opacity: 0;
+  transform: translateY(6px);
+}
+.jr-index {
+  font: 13px var(--mg-mono);
+  letter-spacing: 1.4px;
+  color: var(--mg-sub);
+  margin-bottom: 14px;
+}
+.jr-caption h2 {
+  font-size: clamp(24px, 3.4vw, 33px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0;
+}
+.jr-context {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--mg-sub);
+  margin: 14px 0 18px;
+}
+.jr-rule,
+.mg-rule {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--global-theme-color);
+}
+.jr-timeline {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 6px;
+}
+.jr-timeline button {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  padding: 8px 0 0;
+  min-width: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+.jr-step {
+  font: 12px var(--mg-mono);
+  color: var(--mg-sub);
+  margin-bottom: 6px;
+}
+.jr-name {
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 500;
+  opacity: 0.55;
+  flex: 1;
+  min-height: 34px;
+}
+.jr-timeline button[aria-pressed="true"] .jr-name {
+  opacity: 1;
+  font-weight: 700;
+}
+.jr-track {
+  position: relative;
+  display: block;
+  height: 2px;
+  margin-top: 8px;
+  background: var(--mg-rule);
+}
+.jr-track i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 0;
+  background: var(--global-theme-color);
+}
+.jr-timeline button:focus-visible,
+.jr-play:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 4px;
+}
+.jr-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  font: 11px var(--mg-mono);
+  letter-spacing: 1px;
+  color: var(--mg-sub);
+}
+.jr-play {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: 13px var(--mg-mono);
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 8px 0 8px 12px;
+}
+
+/* Numbered sections */
+.mg-section {
+  margin-top: 72px;
+}
+.mg-section-head,
+.mg-subhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid var(--mg-rule);
+  padding-top: 12px;
+  margin-bottom: 28px;
+  font: 13px var(--mg-mono);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--mg-sub);
+}
+.mg-subhead {
+  margin-top: 48px;
+}
+.mg-section-head a,
+.mg-subhead a {
+  text-transform: none;
+  letter-spacing: 0;
+}
+.mg-about {
+  display: grid;
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+.mg-portrait {
+  margin: 0;
+}
+.mg-portrait img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+.mg-name {
+  font-size: 30px;
+  margin: 0 0 6px;
+}
+.mg-subtitle ul.affil {
+  margin-top: 0;
+}
+.mg-prose p {
+  line-height: 1.65;
+}
+.mg-project {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 18px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--mg-rule);
+}
+.mg-project:first-child {
+  padding-top: 0;
+}
+.mg-project-num {
+  font: 13px var(--mg-mono);
+  color: var(--mg-sub);
+  padding-top: 6px;
+}
+.mg-project h3 {
+  font-size: clamp(20px, 2.4vw, 26px);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0;
+}
+.mg-project h3 a {
+  color: var(--global-text-color);
+}
+.mg-project h3 a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+.mg-project .mg-rule {
+  margin: 14px 0;
+}
+.mg-project p {
+  font-size: 14.5px;
+  color: var(--mg-sub);
+  margin: 0 0 10px;
+}
+.mg-more {
+  font-size: 14px;
+  font-weight: 500;
+}
+.mg-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mg-news li {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--mg-rule);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.mg-news li:first-child {
+  padding-top: 0;
+}
+.mg-news-date {
+  font: 13px var(--mg-mono);
+  color: var(--mg-sub);
+  padding-top: 2px;
+}
+#contact .social {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .jr-main {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .jr-model {
+    height: 230px;
+  }
+  .jr-timeline {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 14px;
+  }
+  .mg-about {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .mg-portrait {
+    max-width: 260px;
+  }
+}
+@media (max-width: 540px) {
+  .mg-section {
+    margin-top: 56px;
+  }
+  .mg-news li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .jr-footer > span {
+    max-width: 220px;
+    line-height: 1.7;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jr-caption {
+    transition: none;
+  }
+}
