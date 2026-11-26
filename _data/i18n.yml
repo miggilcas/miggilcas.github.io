@@ -1,0 +1,21 @@
+# UI strings for the bilingual site (EN/ES). Pages declare `lang: es`; default is English.
+en:
+  home: /
+  about: about
+  news: news
+  news_url: /news/
+  selected_publications: selected publications
+  publications_url: /publications/
+  switch_label: ES
+  switch_title: Ver en español
+  date_format: "%b %d, %Y"
+es:
+  home: /es/
+  about: sobre mí
+  news: noticias
+  news_url: /news/
+  selected_publications: publicaciones destacadas
+  publications_url: /es/publications/
+  switch_label: EN
+  switch_title: View in English
+  date_format: "%d/%m/%Y"

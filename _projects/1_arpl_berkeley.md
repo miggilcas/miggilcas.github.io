@@ -5,6 +5,7 @@ description: "Six-month research stay on language-driven autonomy for aerial rob
 importance: 1
 category: research
 related_publications: false
+lang_ref: arpl_berkeley
 ---
 
 **Where:** [Agile Robotics and Perception Lab (ARPL)](https://arplaboratory.github.io/), UC Berkeley · **Host:** Prof. Giuseppe Loianno · **When:** Feb–Jul 2026

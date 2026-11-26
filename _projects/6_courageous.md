@@ -5,6 +5,7 @@ description: "EU Internal Security Fund · Benchmarking counter-UAS detection sy
 importance: 6
 category: research
 related_publications: false
+lang_ref: courageous
 ---
 
 **Project:** COURAGEOUS (EU Internal Security Fund – Police, GA 101034655)

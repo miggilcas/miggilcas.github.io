@@ -25,6 +25,7 @@ announcements:
 
 latest_posts:
   enabled: false
+lang_ref: home
 ---
 
 I build autonomy for aerial robots that has to work outside the lab. My PhD at the GRVC Robotics Lab (University of Seville), advised by Prof. Guillermo Heredia and Prof. Aníbal Ollero, develops **Behavior Tree–based architectures** that take UAVs from atomic behaviors to complete, reactive missions, with emergency handling built in and the same tree running unchanged on DJI, PX4 and ArduPilot platforms. I have deployed these systems in field campaigns for power-line, bridge and pipeline inspection within EU projects such as AERIAL-CORE, OMICRON and SIMAR.

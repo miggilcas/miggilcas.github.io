@@ -5,6 +5,7 @@ description: "EU Horizon Europe · Robotic inspection and maintenance of industr
 importance: 5
 category: research
 related_publications: false
+lang_ref: simar
 ---
 
 **Project:** [SIMAR](https://cordis.europa.eu/project/id/101070604) (EU Horizon Europe, GA 101070604)

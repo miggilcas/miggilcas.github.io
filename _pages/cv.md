@@ -5,6 +5,7 @@ title: CV
 nav: true
 nav_order: 3
 description: Academic CV (PDF).
+lang_ref: cv
 ---
 
 <p>

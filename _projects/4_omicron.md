@@ -5,6 +5,7 @@ description: "EU H2020 · Cooperative multi-UAV inspection of bridges and road i
 importance: 4
 category: research
 related_publications: false
+lang_ref: omicron
 ---
 
 **Project:** [OMICRON](https://cordis.europa.eu/project/id/955269) (EU H2020, GA 955269)

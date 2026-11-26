@@ -5,6 +5,7 @@ description: "EU H2020 · Heterogeneous multi-UAV team for long-range power-line
 importance: 2
 category: research
 related_publications: false
+lang_ref: aerial_core
 ---
 
 **Project:** [AERIAL-CORE](https://aerial-core.eu) (EU H2020) · **When:** 2022–2023

@@ -5,6 +5,7 @@ description: "Spanish national project · UAV inspection of the power grid in Do
 importance: 3
 category: research
 related_publications: false
+lang_ref: resisto
 ---
 
 **Project:** RESISTO (Spanish national project, Red.es / ERDF) · **Partner:** e-Distribución
