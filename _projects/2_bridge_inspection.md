@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Cooperative multi-UAV bridge inspection
-description: Onboard Behavior Trees for cooperative inspection of an in-service motorway viaduct (ICUAS 2025, EU OMICRON).
+title: "Cooperative multi-UAV bridge inspection"
+description: "Onboard Behavior Trees for cooperative inspection of an in-service motorway viaduct (ICUAS 2025, EU OMICRON)."
 importance: 2
 category: research
 related_publications: false

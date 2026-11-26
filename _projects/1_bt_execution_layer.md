@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Autopilot-agnostic Behavior Trees
-description: One Behavior Tree, any autopilot: execution layer with built-in emergency handling (JINT 2026).
+title: "Autopilot-agnostic Behavior Trees"
+description: "One Behavior Tree, any autopilot: execution layer with built-in emergency handling (JINT 2026)."
 importance: 1
 category: research
 related_publications: false

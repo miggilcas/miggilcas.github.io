@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Heterogeneous fleet for power-line inspection
-description: Commercial multirotors and a VTOL integrated into one team for long-range power-line inspection (ICUAS 2024, EU AERIAL-CORE).
+title: "Heterogeneous fleet for power-line inspection"
+description: "Commercial multirotors and a VTOL integrated into one team for long-range power-line inspection (ICUAS 2024, EU AERIAL-CORE)."
 importance: 3
 category: research
 related_publications: false
