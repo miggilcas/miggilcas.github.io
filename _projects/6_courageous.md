@@ -6,6 +6,7 @@ importance: 6
 category: research
 related_publications: false
 lang_ref: courageous
+permalink: /projects/courageous/
 ---
 
 **Project:** COURAGEOUS (EU Internal Security Fund – Police, GA 101034655)

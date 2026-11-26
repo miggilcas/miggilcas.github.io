@@ -6,6 +6,7 @@ importance: 2
 category: research
 related_publications: false
 lang_ref: aerial_core
+permalink: /projects/aerial_core/
 ---
 
 **Project:** [AERIAL-CORE](https://aerial-core.eu) (EU H2020) · **When:** 2022–2023

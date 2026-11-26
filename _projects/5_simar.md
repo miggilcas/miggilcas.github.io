@@ -6,6 +6,7 @@ importance: 5
 category: research
 related_publications: false
 lang_ref: simar
+permalink: /projects/simar/
 ---
 
 **Project:** [SIMAR](https://cordis.europa.eu/project/id/101070604) (EU Horizon Europe, GA 101070604)

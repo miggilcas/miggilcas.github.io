@@ -6,6 +6,7 @@ importance: 3
 category: research
 related_publications: false
 lang_ref: resisto
+permalink: /projects/resisto/
 ---
 
 **Project:** RESISTO (Spanish national project, Red.es / ERDF) · **Partner:** e-Distribución
