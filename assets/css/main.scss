@@ -65,3 +65,30 @@ h6,
 .profile img {
   border-radius: 12px;
 }
+
+/* Header: affiliation list + topic tags (Mrunal-style) */
+ul.affil {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.4rem 0 0.6rem;
+}
+ul.affil li {
+  margin: 0.15rem 0;
+}
+ul.affil i {
+  width: 1.3em;
+  color: var(--global-theme-color);
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.tags span {
+  font-size: 0.8rem;
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 999px;
+  color: var(--global-theme-color);
+}

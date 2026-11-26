@@ -13,4 +13,4 @@ One Behavior Tree, any autopilot. This modular execution layer lets the same mis
 - Runs at 10 Hz using 6.3% of one CPU core and 33 MB of RAM.
 - Later ported to ROS 2 with PX4 and Crazyflie backends.
 
-**Paper:** [Journal of Intelligent & Robotic Systems, 2026](https://doi.org/10.1007/s10846-026-02367-z) · **Code:** [github.com/miggilcas/grvc_bt_ros](https://github.com/miggilcas/grvc_bt_ros)
+**Paper:** [Journal of Intelligent & Robotic Systems, 2026](https://doi.org/10.1007/s10846-026-02367-z)

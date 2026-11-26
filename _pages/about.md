@@ -2,16 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Candidate in Robotics · <a href='https://grvc.us.es/'>GRVC Robotics Lab</a>, University of Seville · Visiting Researcher at <a href='https://arplaboratory.github.io/'>ARPL</a>, UC Berkeley (2026)
+subtitle: >
+  <ul class="affil">
+  <li><i class="fa-solid fa-graduation-cap"></i> PhD Candidate · <a href="https://grvc.us.es/">GRVC Robotics Lab</a>, University of Seville</li>
+  <li><i class="fa-solid fa-flask"></i> Visiting Researcher · <a href="https://arplaboratory.github.io/">ARPL</a>, UC Berkeley (2026)</li>
+  <li><i class="fa-solid fa-briefcase"></i> Intern · ALTER Technology (2022)</li>
+  </ul>
+  <div class="tags"><span>Aerial Robotics</span><span>Behavior Trees</span><span>Foundation Models for Robotics</span><span>Multi-UAV Systems</span><span>Field Robotics</span></div>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <p>GRVC Robotics Lab</p>
-    <p>University of Seville</p>
-    <p>Seville, Spain</p>
 
 selected_papers: true
 social: true
@@ -29,4 +31,4 @@ I build autonomy for aerial robots that has to work outside the lab. My PhD at t
 
 In 2026 I spent six months as a visiting researcher at Prof. Giuseppe Loianno's [Agile Robotics and Perception Lab (ARPL)](https://arplaboratory.github.io/) at UC Berkeley, working on **language-driven autonomy**: letting LLMs and VLMs generate and ground the missions that aerial robots execute.
 
-I'm interested in combining the reasoning of foundation models (LLMs, VLMs, VLAs) with interpretable, verifiable decision-making, and in perception-driven agile flight. I expect to defend my thesis in Spring 2027 and **I am looking for postdoctoral positions**.
+I'm interested in combining the reasoning of foundation models (LLMs, VLMs, VLAs) with interpretable, verifiable decision-making, and in perception-driven agile flight.
