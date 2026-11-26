@@ -356,8 +356,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Gil-Castilla]
+  first_name: [Miguel, M.]
 
   style: apa
   locale: en
@@ -546,7 +546,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

@@ -2,33 +2,31 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD Candidate in Robotics · <a href='https://grvc.us.es/'>GRVC Robotics Lab</a>, University of Seville · Visiting Researcher at <a href='https://arplaboratory.github.io/'>ARPL</a>, UC Berkeley (2026)
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>GRVC Robotics Lab</p>
+    <p>University of Seville</p>
+    <p>Seville, Spain</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 6
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I build autonomy for aerial robots that has to work outside the lab. My PhD at the GRVC Robotics Lab (University of Seville), advised by Prof. Guillermo Heredia and Prof. Aníbal Ollero, develops **Behavior Tree–based architectures** that take UAVs from atomic behaviors to complete, reactive missions, with emergency handling built in and the same tree running unchanged on DJI, PX4 and ArduPilot platforms. I have deployed these systems in field campaigns for power-line, bridge and pipeline inspection within EU projects such as AERIAL-CORE, OMICRON and SIMAR.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In 2026 I spent six months as a visiting researcher at Prof. Giuseppe Loianno's [Agile Robotics and Perception Lab (ARPL)](https://arplaboratory.github.io/) at UC Berkeley, working on **language-driven autonomy**: letting LLMs and VLMs generate and ground the missions that aerial robots execute.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I'm interested in combining the reasoning of foundation models (LLMs, VLMs, VLAs) with interpretable, verifiable decision-making, and in perception-driven agile flight. I expect to defend my thesis in Spring 2027 and **I am looking for postdoctoral positions**.

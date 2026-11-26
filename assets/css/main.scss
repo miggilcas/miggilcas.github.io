@@ -1,0 +1,67 @@
+---
+# Local override of al_folio_core's assets/css/main.scss.
+# Same imports as the gem (v1.0.16), plus site-specific design tokens at the end.
+---
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+@use "themes";
+@use "layout";
+
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Miguel Gil-Castilla: site design tokens
+ * Accent: navy #1F3A5F (light) / light blue #8FB4E3 (dark), typeface: Inter
+ ******************************************************************************/
+:root {
+  --global-theme-color: #1f3a5f;
+  --global-hover-color: #2d5a8e;
+  --global-hover-text-color: #ffffff;
+  --site-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #8fb4e3;
+  --global-hover-color: #b5cfee;
+  --global-hover-text-color: #1a1a1a;
+}
+
+body {
+  font-family: var(--site-font);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+.post-title {
+  font-family: var(--site-font);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Profile photo: vertical rectangle with soft corners */
+.profile img {
+  border-radius: 12px;
+}
